@@ -1,0 +1,46 @@
+package file1;
+
+import java.util.Scanner;
+
+public class code1 {
+    public static void main(String[] args){
+        boolean flag=true;
+        Scanner sc=new Scanner(System.in);
+        
+
+        while(flag==true){
+            System.out.println("enter number for execution:");
+            System.out.println("1. ADDITION");
+            System.out.println("2. SUBTRACTE");
+            System.out.println("3. MULTIPLICATION");
+            System.out.println("4. DIVISION");
+            System.out.println("enter operation to perform:");
+            
+            int x=sc.nextInt();
+            System.out.println("enter two integers:");
+            int a=sc.nextInt();
+            int b=sc.nextInt();
+            if (x==1){
+                int sum=a+b;
+                System.out.println("the sum is : "+sum );
+            }
+            else if (x==2){
+                int sub=a-b;
+                System.out.println("the subtraction is : "+sub );
+            }
+            else if (x==3){
+                int mul=a*b;
+                System.out.println("the multiplication is : "+mul );
+            }
+            else if (x==4){
+                int div=a/b;
+                System.out.println("the divivsion is : "+div );
+            }
+            
+
+            flag=sc.hasNext();
+        }
+       
+
+    }
+}
